@@ -46,3 +46,12 @@ OOP는 현실 세계를 프로그래밍으로 옮겨와 현실 세계의 사물�
         객체지향언어는 대체로 난이도가 높다. 특히 다중 상속 지원이 되는 C++이 대표적인 예시다.
 <hr>
 
+## RESTful API
+REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 자원에 대한 CRUD 요청을 Resource와 Method로 표현하여 특정한 형태로 전달하는 방식.
+
+<RESTful API 구성요소>
+ - Resource(자원, URL)
+ - Method(요청 방식, GET or POST 등)
+ - Representation or Resource(자원의 형태, JSON or XML 등)
+<hr>
+
