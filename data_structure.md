@@ -65,3 +65,10 @@
 <img src="https://blog.kakaocdn.net/dn/blxsRD/btq21CW9Fw3/WOk8F74J254K1pczckskEK/img.png">
 <hr>
 
+## 레드블랙 트리
+ - 레드블랙 트리는 모든 노드를 빨간색 또는 검정색으로 색칠합니다.
+ - 그리고 연결된 노드들은 색이 중복되지 않도록 관리합니다.
+
+<레드블랙 트리 이미지>
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcitWfI%2FbtrptgRQlFi%2Fvd9FwY1WQKUpKDkjZWIGD1%2Fimg.png">
