@@ -51,3 +51,8 @@
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbT9vAg%2FbtqOzASZJPM%2FTKQmop7XQziU6aqM5Kdmik%2Fimg.png">
 <hr>
 
+## 큐와 스택의 구현
+ - 큐(Queue) : Array로 구현하면 pull 연산 이후 객체를 앞당기는 작업이 필요. 하지만 List로 구현하면 객체 1개만 제거하면 되므로 삽입 및 삭제가 용이한 LinkedList로 구현하는 것이 유리함
+ - 스택(Stack) : List로 구현하면 객체를 제거하는 작업이 필요. 하지만 Array로 구현하면 삭제할 필요 없이 index를 줄이고 초기화만 하면 되므로, Array로 구현하는 것이 유리함
+<hr>
+
