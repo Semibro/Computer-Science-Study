@@ -34,3 +34,20 @@
  - 하지만 해시의 index값이 충돌이 발생할 경우 충돌된 index값에 대해 연결된 데이터들을 조회하여 원하는 값을 조회하기 때문에 O(N)까지 증가할 수 있음
 <hr>
 
+## LinkedList와 ArrayList 차이
+ - ArrayList는 데이터들이 순서대로 늘어선 배열의 형식을 취하고 있지만, LinkedList는 자료의 주소값으로 서로 연결된 형식을 가지고 있다.
+ - 이러한 구조에 의해 둘은 각각의 장단점을 가지고 있다.
+ - ArrayList
+    1. 원하는 데이터에 무작위 접근이 가능
+    2. 리스트의 크기가 제한되어 있으며, 리스트의 크기를 재조정하는 것은 많은 연산이 필요
+    3. 데이터의 추가/삭제를 위해서는 임시 배열을 생성하여 복제하고 있어 시간이 오래 걸림
+ - LinkedList
+    1. 리스트의 크기에 영향없이 데이터를 추가할 수 있음
+    2. 데이터를 추가하기 위해 새로운 노드를 생성하여 연결하므로 추가/삭제 연산이 빠름
+    3. 무작위 접근이 불가능하며, 순차 접근만 가능
+
+<LinkedList ArrayList 이미지>
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbT9vAg%2FbtqOzASZJPM%2FTKQmop7XQziU6aqM5Kdmik%2Fimg.png">
+<hr>
+
