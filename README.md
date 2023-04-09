@@ -55,3 +55,9 @@ REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 자원�
  - Representation or Resource(자원의 형태, JSON or XML 등)
 <hr>
 
+## 함수형 프로그래밍
+함수형 프로그래밍의 가장 큰 특징은 immutable data와 first class citizen으로서의 함수.
+함수형 프로그래밍은 부수효과가 없는 순수 함수를 이용하여 프로그램을 만드는 것.
+부수 효과가 없는 순수 함수란 데이터의 값을 변경시키지 않으며 객체의 필드를 설정하는 등의 작업을 하지 않는 함수를 의미한다.
+<hr>
+
