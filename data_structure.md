@@ -56,3 +56,12 @@
  - 스택(Stack) : List로 구현하면 객체를 제거하는 작업이 필요. 하지만 Array로 구현하면 삭제할 필요 없이 index를 줄이고 초기화만 하면 되므로, Array로 구현하는 것이 유리함
 <hr>
 
+## AVL 트리
+ - AVL트리란 한 쪽으로 값이 치우치는 이진 탐색 트리(Binary Search Tree, BST)의 한계점을 보완하기 위해 만들어진 균형 잡힌 이진 트리
+ - AVL은 항상 좌/우로 데이터를 균형잡힌 상태로 유지하기 위해 추가적인 연산을 진행
+
+<AVL 트리 이미지>
+
+<img src="https://blog.kakaocdn.net/dn/blxsRD/btq21CW9Fw3/WOk8F74J254K1pczckskEK/img.png">
+<hr>
+
