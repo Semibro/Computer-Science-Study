@@ -113,3 +113,23 @@ REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 자원�
     3. 작업이 완료된 결과를 제어하기 어렵다
 <hr>
 
+## 메세지 큐(Message Queue)
+메세지 큐란 Queue 자료구조를 이용하여 데이터(메세지)를 관리하는 시스템으로 비동기 통신 프로토콜을 제고아여 메세지를 빠르게 주고 받을 수 있게 해준다. 메세지 큐에서는 Producer(생산자)가 Message를 Queue에 넣어두면, Consumer가 Message를 가져와 처리하게 된다. 메세지 큐에는 Kafka, Rabbit MQ, AMPQ 등이 있다.
+<hr>
+
+## Docker(도커)와 Kubernates(쿠버네티스)
+ - Docker
+    1. 도커는 컨테이너 기반의 가상화 기술
+    2. 기존에는 하드웽를 가상화하였기 때문에 Host OS위에 Guest OS를 설치해야 했지만, 이러한 방식은 상당히 무겁고 느려 한계가 많이 있었음
+    3. 이를 극복하고자 프로세스를 격리시킨 컨테이너를 통해 가상화를 하는 Docker와 같은 기술이 등장함
+    4. 그리고 도커를 통해 구동되는 컨테이너를 관리하기 위한 Kubernates가 등장
+<Docker의 장/단점>
+ - 장점
+    1. 쉽고 빠른 실행 환경 구축
+    2. 하드웨어 자원 절감
+    3. Docker Hub와 같은 공유 환경 제공
+ - 단점
+    1. 개발 초기의 오버헤드
+    2. Linux 친화적
+<hr>
+
