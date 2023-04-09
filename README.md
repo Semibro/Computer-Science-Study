@@ -67,6 +67,8 @@ OOP는 현실 세계를 프로그래밍으로 옮겨와 현실 세계의 사물�
  - 데이터 영역 : 프로그램의 전역 변수(global)와 정적 변수(static)가 저장되는 영역. 데이터 영역은 프로그램의 시작과 함께 할당되며, 프로그램이 종료되면 소멸
  - 힙 영역 : 프로그래머가 직접 관리할 수 있는 메모리 영역으로 이 공간에 메모리를 할당하는 것을 동적할당이라고 한다. JAVA에서는 가바지 컬렉터가 자동으로 해체해준다. 힙 영역은 스택 영역과 달리 낮은 주소에서 높은 주소로 메모리가 할당된다.
  - 스태 영역 : 함수의 호출과 함께 할당되며 지역 변수와 매개 변수가 저장되는 영역. 스택 영역에 저장되는 함수의 호출 정보를 스택프레임이라고 한다. 스택 영역은 함수의 호출이 완료되면 소멸한다. 스택 영역은 높은 주소에서 낮은 주소로 메모리가 할당된다.
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FnyV7n%2FbtqITvcHjTA%2Fdk2V9ejhCT1P5Zngumuag1%2Fimg.png">
 <hr>
 
 ## Parameter와 Argument의 차이
@@ -83,6 +85,8 @@ OOP는 현실 세계를 프로그래밍으로 옮겨와 현실 세계의 사물�
     1. 인자로 받은 값의 주소를 참조하여 직접 값에 영향을 주는 방식
     2. 값을 복사하지 않고 직접 참조하기 때문에 속도가 빠름
     3. 원래의 값에 영향을 주는 리스크가 존재
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbEYbci%2FbtqMN2RBLFy%2Fa3b0NNTeWJlRCCE4zSXlJ0%2Fimg.png">
 <hr>
 
 ## 프레임워크와 라이브러리 차이
@@ -147,6 +151,8 @@ OOP는 현실 세계를 프로그래밍으로 옮겨와 현실 세계의 사물�
  - 여러 도메인들이 서로 상호작용하며 설계하는 것이 도메인 주도 설계
  - 도메인 주도 설계에서 도메인은 각각 분리되어 있는데, 이러한 관점에서 MAS(MicroService Architecture)를 적용하면 용이한 설계를 할 수 있음
  - 문맥에 따라 객체의 역할이 바뀔 수 있는 것이 DDD
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCfary%2FbtqLmrSkZEw%2FMVo67MpjqqCzjYZbB4MDf1%2Fimg.png">
 <hr>
 
 ## MSA(MicroService Architecture)
@@ -163,6 +169,8 @@ OOP는 현실 세계를 프로그래밍으로 옮겨와 현실 세계의 사물�
     1. 서비스가 분리되어 있어, 테스팅이나 트랜잭션 처리 등이 어렵다.
     2. 서비스 간에 API로 통신하기 때문에 그에 대한 비용이 발생
     3. 서비스 간의 호출이 연속적이기 때문에 디버깅 및 에러 트레이싱이 어렵다.
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbuH6DA%2FbtqK6NCuZHm%2FLgd1TIlZmyCAQwTRh2KMB1%2Fimg.png">
 <hr>
 
 ※ 출처 : https://mangkyu.tistory.com/88
