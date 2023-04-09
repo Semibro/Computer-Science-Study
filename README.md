@@ -47,7 +47,7 @@ OOP는 현실 세계를 프로그래밍으로 옮겨와 현실 세계의 사물�
 <hr>
 
 ## RESTful API
-REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 자원에 대한 CRUD 요청을 Resource와 Method로 표현하여 특정한 형태로 전달하는 방식.
+ - REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 자원에 대한 CRUD 요청을 Resource와 Method로 표현하여 특정한 형태로 전달하는 방식.
 
 <RESTful API 구성요소>
  - Resource(자원, URL)
@@ -56,9 +56,9 @@ REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 자원�
 <hr>
 
 ## 함수형 프로그래밍
-함수형 프로그래밍의 가장 큰 특징은 immutable data와 first class citizen으로서의 함수.
-함수형 프로그래밍은 부수효과가 없는 순수 함수를 이용하여 프로그램을 만드는 것.
-부수 효과가 없는 순수 함수란 데이터의 값을 변경시키지 않으며 객체의 필드를 설정하는 등의 작업을 하지 않는 함수를 의미한다.
+ - 함수형 프로그래밍의 가장 큰 특징은 immutable data와 first class citizen으로서의 함수.
+ - 함수형 프로그래밍은 부수효과가 없는 순수 함수를 이용하여 프로그램을 만드는 것.
+ - 부수 효과가 없는 순수 함수란 데이터의 값을 변경시키지 않으며 객체의 필드를 설정하는 등의 작업을 하지 않는 함수를 의미한다.
 <hr>
 
 ## 메모리 구조
@@ -114,7 +114,9 @@ REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 자원�
 <hr>
 
 ## 메세지 큐(Message Queue)
-메세지 큐란 Queue 자료구조를 이용하여 데이터(메세지)를 관리하는 시스템으로 비동기 통신 프로토콜을 제고아여 메세지를 빠르게 주고 받을 수 있게 해준다. 메세지 큐에서는 Producer(생산자)가 Message를 Queue에 넣어두면, Consumer가 Message를 가져와 처리하게 된다. 메세지 큐에는 Kafka, Rabbit MQ, AMPQ 등이 있다.
+ - 메세지 큐란 Queue 자료구조를 이용하여 데이터(메세지)를 관리하는 시스템으로 비동기 통신 프로토콜을 제고아여 메세지를 빠르게 주고 받을 수 있게 해준다.
+ - 메세지 큐에서는 Producer(생산자)가 Message를 Queue에 넣어두면, Consumer가 Message를 가져와 처리하게 된다.
+ - 메세지 큐에는 Kafka, Rabbit MQ, AMPQ 등이 있다.
 <hr>
 
 ## Docker(도커)와 Kubernates(쿠버네티스)
@@ -145,3 +147,21 @@ REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 자원�
  - 여러 도메인들이 서로 상호작용하며 설계하는 것이 도메인 주도 설계
  - 도메인 주도 설계에서 도메인은 각각 분리되어 있는데, 이러한 관점에서 MAS(MicroService Architecture)를 적용하면 용이한 설계를 할 수 있음
  - 문맥에 따라 객체의 역할이 바뀔 수 있는 것이 DDD
+<hr>
+
+## MSA(MicroService Architecture)
+ - MSA는 모든 시스템의 구성요소가 한 프로젝트에 통합되어 있는 Monolithic Architecture(모놀리식 아키텍쳐)의 한계점을 극복하고자 등장
+ - MSA는 1개의 시스템을 독립적으로 배포가능한 각각의 서비스로 분할
+ - 각각의 서비스는 API를 통해 데이터를 주고받으며 1개의 큰 서비스를 구성
+
+<MSA 장/단점>
+ - 장점
+    1. 일부 서비스에 장애가 발생하여도 전체 서비스에 장애가 발생하지 않는다.
+    2. 각각의 서비스들은 서로 다른 언어와 프레임워크로 구성될 수 있다.
+    3. 서비스의 확장이 용이하다
+ - 단점
+    1. 서비스가 분리되어 있어, 테스팅이나 트랜잭션 처리 등이 어렵다.
+    2. 서비스 간에 API로 통신하기 때문에 그에 대한 비용이 발생
+    3. 서비스 간의 호출이 연속적이기 때문에 디버깅 및 에러 트레이싱이 어렵다.
+<hr>
+
