@@ -117,3 +117,5 @@ def insertion_sort(arr):
 ```
 <hr>
 
+## 정렬 알고리즘 시간복잡도 비교
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FFffzd%2FbtqIYas3Ij5%2Fow6oK7GS6faEe1XQPZ65vK%2Fimg.png">
