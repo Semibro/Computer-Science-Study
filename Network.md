@@ -2,13 +2,14 @@
 
 ## 웹 동작 방식
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdmomKO%2FbtqK84xb9yy%2FktAElZQp6AFyxgXG35eORk%2Fimg.png">
- 1. 사용자가 브라우저에 URL을 입력<br>
- 2. 브라우저는 DNS를 통해 서버의 진짜 주소를 찾음<br>
- 3. HHTP 프로토콜을 사용하여 HTTP 요청 메세지를 생성<br>
- 4. TCP/IP 연결을 통해 HTTP요청이 서버로 전송<br>
- 5. 서버는 HTTP 프로토콜을 활용해 HTTP 응답 메세지를 생성<br>
- 6. TCP/IP 연결을 통해 요청한 컴퓨터로 전송<br>
- 7. 도착한 HTTP 응답 메세지는 웹페이지 데이터로 변환, 웹 브라우저에 의해 출력되어 사용자가 볼 수 있게 됨
+ 
+1. 사용자가 브라우저에 URL을 입력<br>
+2. 브라우저는 DNS를 통해 서버의 진짜 주소를 찾음<br>
+3. HHTP 프로토콜을 사용하여 HTTP 요청 메세지를 생성<br>
+4. TCP/IP 연결을 통해 HTTP요청이 서버로 전송<br>
+5. 서버는 HTTP 프로토콜을 활용해 HTTP 응답 메세지를 생성<br>
+6. TCP/IP 연결을 통해 요청한 컴퓨터로 전송<br>
+7. 도착한 HTTP 응답 메세지는 웹페이지 데이터로 변환, 웹 브라우저에 의해 출력되어 사용자가 볼 수 있게 됨
 <hr>
 
 ## TCP vs UDP
@@ -38,5 +39,17 @@
     1. 어떤 네트워크 안에서 사용되는 IP주소
     2. IPV4의 부족으로 인해 모든 네트워크가 공인 IP를 사용하는 것이 불가능하기 때문에 네트워크 안에서 라우터를 통해 할당받은 가상의 주소
     3. 별도의 설정 없이는 외부에서 접근이 불가능
+<hr>
+
+## OSI 7계층
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbq5dyv%2FbtqJls7HC1T%2FcTY7UKcQ4ZxmgxtenNf9MK%2Fimg.jpg">
+ 
+ - 7계층(응용 계층) : 사용자와 직접 상호작용하는 응용 프로그램들이 포함된 계층
+ - 6계층(표현 계층) : 데이터의 형식(Format)을 정의하는 계층
+ - 5계층(세션 계층) : 컴퓨터끼리 통신을 하기 위해 세션을 만드는 계층
+ - 4계층(전송 계층) : 최종 수신 프로세스로 데이터의 전송을 담당하는 계층
+ - 3계층(네트워크 계층) : 패킷을 목적지까지 가장 빠른 길로 전송하기 위한 계층
+ - 2계층(데이터링크 계층) : 데이터의 물리적인 전송과 에러 검출, 흐름 제어를 담당하는 계층
+ - 1계층(물리 계층) : 데이터를 전기 신호로 바꾸어주는 계층
 <hr>
 
