@@ -72,5 +72,3 @@
 <레드블랙 트리 이미지>
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcitWfI%2FbtrptgRQlFi%2Fvd9FwY1WQKUpKDkjZWIGD1%2Fimg.png">
-
-※ 출처 : https://mangkyu.tistory.com/88
