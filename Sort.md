@@ -74,3 +74,32 @@ def Merge_Sort(arr):
     return merged_arr
 ```
 <hr>
+
+## Quick Sort
+ - 퀵정렬은 매우 빠른 정렬 속도를 자랑하는 분할 정복 알고리즘 중 하나
+ - 합병정렬과 달리 리스트를 비균등하게 분할
+ - 피봇을 설정하고 피봇보다 큰값과 작은값으로 분할하여 정렬
+ - 시간복잡도는 O(nlog2n)
+ - 리스트가 계속해서 불균등하게 나눠지는 경우 시간복잡도는 O(n^2)
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FykKjA%2FbtqLhQxCApg%2FthkLcCfbJVYidkW5K9ntx0%2Fimg.jpg">
+
+```python
+def Quick_Sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    pivot = arr[len(arr) // 2]
+    less_arr, equal_arr, great_arr = [], [], []
+
+    for num in arr:
+        if num < pivot:
+            less_arr.append(num)
+        elif num > pivot:
+            great_arr.append(num)
+        else:
+            equal_arr.append(num)
+    
+    return Quick_Sort(less_arr) + equal_arr + Quick_sort(great_arr)
+```
+<hr>
+
