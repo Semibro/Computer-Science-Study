@@ -29,3 +29,14 @@
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQbowq%2Fbtq0A3i1wLQ%2FUr5qXVR6TPGeXkdOxGKZak%2Fimg.png">
 <hr>
 
+## 공인IP vs 사설IP
+ - 공인IP
+    1. 전세계에서 유일한 IP로 ISP(인터넷 서비스 공급자)가 제공하는 IP주소
+    2. 외부에 공개되어 있기 때문에 인터넷에 연결된 다른 장비로부터 접근이 가능
+    3. 그에 따라 방화벽 등과 같은 보안 설정을 해줘야 함
+ - 사설IP
+    1. 어떤 네트워크 안에서 사용되는 IP주소
+    2. IPV4의 부족으로 인해 모든 네트워크가 공인 IP를 사용하는 것이 불가능하기 때문에 네트워크 안에서 라우터를 통해 할당받은 가상의 주소
+    3. 별도의 설정 없이는 외부에서 접근이 불가능
+<hr>
+
