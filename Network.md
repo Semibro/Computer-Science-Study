@@ -78,3 +78,9 @@
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzQARi%2FbtqLbmEl9Qk%2FR2HOrUGsPt9T8LFW28UMd0%2Fimg.png">
 <hr>
 
+## 3-Way-Handshake
+ - 3-Way-Handshake란 TCP 네트워크에서 통신을 하는 장치가 서로 연결이 잘 되어있는지 확인하는 방법
+ - 송신자와 수신자는 총 3번에 걸쳐 데이터를 주고 받으며 통신이 가능한 상태임을 확인
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FyuxLk%2FbtrnDGYIqAe%2FdoXz5ISKArDOoVVq5SoKp0%2Fimg.png">
+<hr>
+
