@@ -15,3 +15,14 @@
 <hr>
 
 ## n개의 배열에서 k(k<=n)번째로 큰수를 찾는 알고리즘
+ - 이런 문제를 해결하기 위해서는 퀵 정렬 사용
+ - 하지만 퀵 정렬의 경우 정렬이 불필요한 부분들을 정렬하면서 효율이 떨어짐
+ - 퀵선택 알고리즘은 퀵 정렬 후 피봇과 k를 비교하여 아래와 같이 수행
+    1. pivot의 인덱스가 k와 같은 경우 : 그대로 그 인덱스의 값을 리턴
+    2. pivot의 인덱스가 k보다 작은 경우 : pivot의 인덱스+1부터 마지막 인덱스까지 다시 Partition함수에 넘겨준다.
+    3. pivot의 인덱스가 k보다 큰 경우 : 첫 번째 인덱스부터 pivot의 인덱스-1까지 다시 Partition함수에 넘겨준다.
+ - 퀵정렬 알고리즘과 다른 점은 예를 들어 pivot의 인덱스가 7이고 k가 5인 경우에, 피봇의 오른쪽 부분은 재귀 함수를 돌지 않아 한 쪽만으로 재귀를 진행
+ - 위의 이유로 시간복잡도는 O(n)
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbRiDtb%2FbtqK8jBktsD%2FTcia2H7eBO5fEdB4H7qQUk%2Fimg.png">
+<hr>
+
