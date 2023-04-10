@@ -14,6 +14,7 @@ def bubble_sort(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 ```
+<hr>
 
 ## Heap Sort
  - 힙정렬은 주어진 데이터를 힙 자료구조로 만들어 최대값 또는 최소값부터 하나씩 꺼내서 정렬하는 알고리즘
@@ -42,3 +43,34 @@ def Heap_Sort(arr):
                 arr[r], arr[c] = arr[c], arr[r]
             r = c
 ```
+<hr>
+
+## Merge_Sort
+ - 병합정렬은 주어진 배열을 크기가 1인 배열로 분할하고 합병하면서 정렬을 진행하는 분할/정복 알고리즘
+ - 시간복잡도는 O(nlog2n)
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMaPX2%2FbtqIWS0GAuO%2FigmIkXQjYxm5ObNcVaSp71%2Fimg.png">
+
+```python
+def Merge_Sort(arr):
+    if len(arr) < 2:
+        return arr
+
+    mid = len(arr) // 2
+    low_arr = Merge_Sort(arr[:mid])
+    high_arr = Merge_Sort(arr[mid:])
+
+    merged_arr = []
+    l = h = 0
+    while l < len(low_arr) and h < len(high_arr):
+        if low_arr[l] < high_arr[h]:
+            merged_arr.append(low_arr[l])
+            l += 1
+        else:
+            merged_arr.append(hign_arr[h])
+            h += 1
+    
+    merged_arr += low_arr[l:]
+    merged_arr += high_arr[h:]
+    return merged_arr
+```
+<hr>
