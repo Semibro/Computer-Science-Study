@@ -78,9 +78,21 @@
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzQARi%2FbtqLbmEl9Qk%2FR2HOrUGsPt9T8LFW28UMd0%2Fimg.png">
 <hr>
 
+## HTTP1 vs HTTP2
+ - HTTP1 : 기본적으로 연결당 하나의 요청/응답을 처리하여 다음과 같은 문제가 발생
+    1. HOL(Head Of Line) Blocking (특정 응답 지연) : 클라이언트의 요청과 서버의 응답이 동기화되어 지연 발생
+    2. RTT(Round Trip Time) 증가 (양방향 지연) : 패킷 왕복 시간의 지연 발생
+    3. 헤더 크기의 비대 : 쿠키 등과 같은 메타데이터에 의해 헤더가 비대해짐
+ - HTTP2 : 아래의 기술을 사용하여 HTTP1의 성능 문제를 해결
+    1. Multiplexed Streams : 하나의 커넥션으로 여러 개의 메세지를 동시에 주고 받을 수 있음
+    2. Stream Prioritization : 요청 온 리소스간의 의존관계를 설정하여 먼저 응답해야하는 리소스를 우선적으로 반환
+    3. Header Compression : 헤더 정보를 HPACK 압축 방식을 이용하여 압축 전송
+    4. Server Push : HTML문서 상에 필요한 리소스를 클라이언트 요청없이 보내줄 수 있음
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Ftp1sd%2Fbtrozjn33FT%2FiGKn5OEnfk5oD3uHsPM3fK%2Fimg.png">
+<hr>
+
 ## 3-Way-Handshake
  - 3-Way-Handshake란 TCP 네트워크에서 통신을 하는 장치가 서로 연결이 잘 되어있는지 확인하는 방법
  - 송신자와 수신자는 총 3번에 걸쳐 데이터를 주고 받으며 통신이 가능한 상태임을 확인
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FyuxLk%2FbtrnDGYIqAe%2FdoXz5ISKArDOoVVq5SoKp0%2Fimg.png">
 <hr>
-
