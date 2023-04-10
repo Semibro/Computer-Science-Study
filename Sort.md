@@ -103,3 +103,17 @@ def Quick_Sort(arr):
 ```
 <hr>
 
+## Insert Sort
+ - 삽입정렬은 두 번째 값부터 시작하여 그 앞에 존재하는 원소들과 비교하여 삽입할 위치를 찾아 삽입하는 정렬 알고리즘
+ - 평균 시간복잡도는 O(n^2)이며, 가장 빠를 경우 O(n)까지 가능
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FPhpP8%2Fbtq2HtsuB7M%2FEEltFOR1urUBTLl1baDJC1%2Fimg.png">
+
+```python
+def insertion_sort(arr):
+    for end in range(1, len(arr)):
+        for i in range(end, 0, -1):
+            if arr[i-1] > arr[i]:
+                arr[i-1], arr[i] = arr[i], arr[i-1]
+```
+<hr>
+
