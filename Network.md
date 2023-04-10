@@ -60,3 +60,21 @@
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbojmIW%2FbtqJnEz0OK0%2FvDLQNKF9vUU9hmFxZ3x04k%2Fimg.png">
 <hr>
 
+## HTTP vs HTTPS
+ - HTTP는 평문 데이터를 전송하는 프로토콜이기 때문에, 주로 비밀번호나 주민번호 등을 주고 받으며 제3자에 의해 조회될 수 있음
+ - 위의 문제를 해결하기 위해 HTTP에 암호화가 추가된 프로토콜이 HTTPS
+ - HTTPS에는 대칭키 암호화와 비대치킹 암호화가 모두 사용
+ - 비대칭키 암/복호화는 비용이 매우 크기 때문에 서버와 클라이언트가 주고받는 모든 메세지를 비대칭키로 암호화하며 오버헤드가 발생할 수 있음
+ - 서버와 클라이언트가 최초 1회로 서로 대칭키를 공유하기 위한 과정에서 비대칭키 암호화를 사용
+ - 이후 메세지를 주고 받을 때는 대칭키 암호화를 사용
+<과정 정리>
+ 1. 클라이언트(브라우저)가 서버로 최초 연결 시도
+ 2. 서버는 공개키(인증서)를 브라우저에게 넘겨줌
+ 3. 브라우저는 인증서의 유효성을 검사하고 세션키를 발급
+ 4. 브라우저는 세션키를 보관하며 추가로 서버의 공개키로 세션키를 암호화하여 서버로 전송
+ 5. 서버는 개인키로 암호화된 세션키를 복호화하여 세션키를 얻음
+ 6. 클라이언트와 서버는 동일한 세션키를 공유하므로 데이터를 전달할 때 세션키로 암호화/복호화를 진행
+ - 공개키로 암호화된 메세지는 개인키를 가지고 있어야만 복호화가 가능하기 때문에, 서버를 제외한 누구도 원본 데이터를 얻을 수 없다.
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzQARi%2FbtqLbmEl9Qk%2FR2HOrUGsPt9T8LFW28UMd0%2Fimg.png">
+<hr>
+
