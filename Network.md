@@ -53,3 +53,10 @@
  - 1계층(물리 계층) : 데이터를 전기 신호로 바꾸어주는 계층
 <hr>
 
+## HTTP 프로토콜
+ - HTTP(Hyper Text Transfer Protocol)이란 서버/클라이언트 모델에 따라 데이터를 주고 받기 위한 프로토콜
+ - HTTP는 애플리케이션 레벨의 프로토콜로 TCP/IP 위에서 작동
+ - HTTP는 상태를 가지고 있지 않는 Stateless 프로토콜이며 Method, Path, Version, Headers, Body 등으로 구성
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbojmIW%2FbtqJnEz0OK0%2FvDLQNKF9vUU9hmFxZ3x04k%2Fimg.png">
+<hr>
+
