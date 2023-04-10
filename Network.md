@@ -14,10 +14,18 @@
 ## TCP vs UDP
  - TCP는 연결형 서비스로 3-way handshakin 과정을 통해 연결을 설정
  - 높은 신뢰성을 보장하지만 속도가 비교적 느리다는 단점
- - TCP는 신뢰성이 중요한 파일 교환과 같은 경우에 사용<br>
+ - TCP는 신뢰성이 중요한 파일 교환과 같은 경우에 사용
  - UDP는 비연결형 서비스로 3-way handshaking을 사용하지 않기 때문에 신뢰성이 떨어지는 단점.
  - 하지만 수신 여부를 확인하지 않기 때문에 속도가 빠르다.
  - UDP는 실시간성이 중요한 스트리밍에 자주 사용
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F9a0c2%2FbtqKIpf6QGI%2Fv5akvGVZj4kVVvAzLVThF1%2Fimg.png">
+<hr>
+
+## GET vs POST
+ - GET은 데이터를 조회하기 위해 사용되는 방식으로 데이터를 헤더에 추가하여 전송하는 방식
+ - URL에 데이터가 노출되기 때문에 보안적으로 중요한 데이터를 포함해서는 안됨
+ - POST는 데이터를 추가 또는 수적하기 위해 사용되는 방식으로 데이터를 바디에 추가하여 전송하는 방식
+ - 완전히 안전한 것은 아니지만 URL에 데이터가 노출되지 않아 GET보다는 안전
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQbowq%2Fbtq0A3i1wLQ%2FUr5qXVR6TPGeXkdOxGKZak%2Fimg.png">
 <hr>
 
