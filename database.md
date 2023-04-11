@@ -23,5 +23,11 @@
  - 제 2정규형 : 제 1정규형을 만족하고, 기본키가 아닌 속성이 기본키에 완전 함수 종속이도록 분해 (완전 함수 종속이란 기본키의 부분집합이 다른 값을 결정하지 않는 것을 의미)
  - 제 3정규형 : 제 2정규형을 만족하고, 기본키가 아닌 속성이 기본키에 직접 종속(비이행적 종속)하도록 분해 (이행적 종속이란 A->B->C가 성립하는 것으로, 이를 A,B와 B,C로 분해하는 것이 제 3정규형)
  - BCNF 정규형 : 제 3정규형을 만족하고, 함수 종속성 X -> Y가 성립할 때 모든 결정자 X가 후보키가 되도록 분해
+<img src="https://images.velog.io/images/bsjp400/post/140f510e-26ed-4807-a517-bc0b9a902c69/image.png">
+<hr>
+
+## Transaction(트랜잭션)
+ - Transaction은 데이터베이스 작업의 단위로써 하나 이상의 쿼리를 처리할 때 동일한 Connection 객체를 공유하여 에러가 발생하는 경우 모든 과정을 되돌리기 위한 방법
+<img src="https://images.velog.io/images/jinho0705/post/6a8ec4c2-329d-42e4-9bbf-122f59d4df12/transaction-status.png">
 <hr>
 
