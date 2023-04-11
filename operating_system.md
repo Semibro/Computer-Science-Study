@@ -37,3 +37,10 @@
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbpie8u%2FbtqKEyScItU%2FISOD7DfzGuBuPdWEfGnZxk%2Fimg.jpg">
 <hr>
 
+## Context Switching(컨텍스트 스위칭)
+ - Context Switching은 인터럽트(Interupt)를 발생시켜 CPU에서 실행중인 프로세스를 중단하고, 다른 프로세스를 처리하기 위한 과정
+ - Contest Switching은 현재 실행중인 프로세스의 상태(Context)를 먼저 저장하고, 다음 프로세스를 동작시켜 작업을 처리한 후에 이전에 저장된 프로세스의 상태를 다시 복구
+ - Interupt(인터럽트) : CPU가 프로세스를 실행하고 있을 때, 입출력 하드웨어 등의 장치나 예외상황이 발생하여 처리가 필요함을 CPU에게 알리는 것
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6fjl1%2FbtqKC9ZqMz9%2F2I1k55j4tMdvnXZD2KyYk1%2Fimg.png">
+<hr>
+
