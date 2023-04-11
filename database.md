@@ -31,3 +31,10 @@
 <img src="https://images.velog.io/images/jinho0705/post/6a8ec4c2-329d-42e4-9bbf-122f59d4df12/transaction-status.png">
 <hr>
 
+## 트랜잭션 ACID
+ - Atomicity(원자성) : 트랜잭션에 포함된 작업은 전부 수행되거나 전부 수행되지 않아야 한다.
+ - Consistency(일관성) : 트랜잭션을 수행하기 전이나 후나 데이터베이스는 항상 일관된 상태를 유지해야 한다.
+ - Isolation(고립성) : 수행 중인 트랜잭션에 다른 트랜잭션이 끼어들어 변경 중인 데이터 값을 훼손하지 않아야한다.
+ - Durability(지속성) : 수행을 성공적으로 완료한 트랜잭션은 변경한 데이터를 영구히 저장해야 한다.
+<hr>
+
